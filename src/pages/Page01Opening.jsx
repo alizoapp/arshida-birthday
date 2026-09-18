@@ -40,10 +40,10 @@ export default function Page01Opening() {
       });
     }, 1100);
 
-    // 1.50s transition into the cinematic reel
+    // 4.00s transition into the cinematic reel (hold so user can see it)
     setTimeout(() => {
       setStep('cinematic');
-    }, 1500);
+    }, 4000);
   };
 
   return (
@@ -162,7 +162,7 @@ export default function Page01Opening() {
               {/* 3. The Inner Paper Card (Pulls out when opening) */}
               <motion.div
                 initial={{ y: 0 }}
-                animate={step === 'opening' ? { y: -65 } : { y: 0 }}
+                animate={step === 'opening' ? { y: -150 } : { y: 0 }}
                 transition={{ delay: 0.45, duration: 0.8, ease: "easeOut" }}
                 style={{ 
                   position: 'absolute', top: '10px', left: '10px', right: '10px', bottom: '15px', 
@@ -204,8 +204,8 @@ export default function Page01Opening() {
               </div>
 
               {/* Tape & Scrapbook Decorations */}
-              <img loading="lazy" src="/assets/tape-strip.png" style={{ position: 'absolute', top: '-15px', right: '40px', width: '60px', transform: 'rotate(12deg)', zIndex: 10, opacity: 0.85, filter: 'drop-shadow(0 2px 3px rgba(0,0,0,0.1))' }} alt="tape" />
-              <img loading="lazy" src="/assets/13-flower-daisy-decoration.png" style={{ position: 'absolute', bottom: '-20px', left: '-20px', width: '75px', zIndex: 10, transform: 'rotate(-25deg)', filter: 'drop-shadow(2px 6px 8px rgba(0,0,0,0.15))' }} alt="flower" />
+              <img loading="lazy" src="/assets/tape-strip.png" style={{ position: 'absolute', top: '5px', right: '20px', width: '60px', transform: 'rotate(12deg)', zIndex: 10, opacity: 0.85, filter: 'drop-shadow(0 2px 3px rgba(0,0,0,0.1))' }} alt="tape" />
+              <img loading="lazy" src="/assets/bottom-floral-decoration.png" style={{ position: 'absolute', bottom: '-15px', left: '-20px', width: '110px', zIndex: 10, transform: 'rotate(-5deg)', filter: 'drop-shadow(2px 6px 8px rgba(0,0,0,0.15))' }} alt="flower" />
             </div>
 
             {/* OPEN Button */}
@@ -285,8 +285,10 @@ export default function Page01Opening() {
 
              {/* HAPPY (Curved textPath flying in) */}
              <motion.div
-               initial={{ offsetDistance: "0%", scale: 1.6, opacity: 0 }} animate={{ offsetDistance: "100%", scale: 1, opacity: 1 }} transition={{ delay: 0.4, duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-               style={{ position: 'absolute', top: '10px', left: '0', width: 'max-content', offsetPath: "path('M -80 -50 C 20 -50, 60 40, 120 40')", offsetRotate: "0deg", zIndex: 3, pointerEvents: 'none' }}
+               initial={{ x: -100, y: -50, scale: 1.6, opacity: 0 }} 
+               animate={{ x: 0, y: 0, scale: 1, opacity: 1 }} 
+               transition={{ delay: 0.4, duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+               style={{ position: 'absolute', top: '10px', left: '50px', width: 'max-content', zIndex: 3, pointerEvents: 'none' }}
              >
                 <svg width="220" height="100" viewBox="0 0 220 100" style={{ overflow: 'visible' }}>
                   <path id="happyCurve" d="M 10 70 Q 110 20 210 60" fill="transparent" />
@@ -298,8 +300,10 @@ export default function Page01Opening() {
 
              {/* BIRTHDAY (Curved textPath flying in from opposite) */}
              <motion.div
-               initial={{ offsetDistance: "0%", scale: 1.4, opacity: 0 }} animate={{ offsetDistance: "100%", scale: 1, opacity: 1 }} transition={{ delay: 0.9, duration: 1.3, ease: [0.16, 1, 0.3, 1] }}
-               style={{ position: 'absolute', top: '20px', left: '0', width: 'max-content', offsetPath: "path('M 420 180 C 320 180, 260 95, 170 95')", offsetRotate: "0deg", zIndex: 2, pointerEvents: 'none' }}
+               initial={{ x: 100, y: 50, scale: 1.4, opacity: 0 }} 
+               animate={{ x: 0, y: 0, scale: 1, opacity: 1 }} 
+               transition={{ delay: 0.9, duration: 1.3, ease: [0.16, 1, 0.3, 1] }}
+               style={{ position: 'absolute', top: '75px', left: '15px', width: 'max-content', zIndex: 2, pointerEvents: 'none' }}
              >
                  <svg width="320" height="100" viewBox="0 0 320 100" style={{ overflow: 'visible' }}>
                   <path id="birthdayCurve" d="M 10 30 Q 160 90 310 30" fill="transparent" />
@@ -310,14 +314,14 @@ export default function Page01Opening() {
              </motion.div>
 
              {/* ARSHIDA 3D RIBBON REVEAL */}
-             <div style={{ position: 'absolute', top: '150px', left: '50%', transform: 'translateX(-50%)', width: '280px', height: '110px', zIndex: 4, pointerEvents: 'none' }}>
-                <svg width="280" height="110" xmlns="http://www.w3.org/2000/svg" style={{ position: 'absolute', top: 0, left: 0 }}>
-                   <defs>
-                      <mask id="arshida-mask"><motion.path d="M -10 55 L 290 55" stroke="white" strokeWidth="110" fill="none" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ delay: 1.8, duration: 1.2, ease: "easeInOut" }} /></mask>
-                   </defs>
-                   <image href="/assets/02-arshida-name.png" width="280" height="110" preserveAspectRatio="xMidYMid contain" mask="url(#arshida-mask)" />
-                </svg>
-             </div>
+             <motion.div 
+               initial={{ opacity: 0, y: 20, scale: 0.9, x: "-50%" }}
+               animate={{ opacity: 1, y: 0, scale: 1, x: "-50%" }}
+               transition={{ delay: 1.8, duration: 1.0, ease: "easeOut" }}
+               style={{ position: 'absolute', top: '150px', left: '50%', width: '280px', height: '110px', zIndex: 4, pointerEvents: 'none' }}
+             >
+                <img src="/assets/02-arshida-name.png" width="100%" height="100%" style={{ objectFit: 'contain' }} alt="Arshida Ribbon" />
+             </motion.div>
 
              {/* "22" Accent */}
              <motion.div
@@ -360,10 +364,10 @@ export default function Page01Opening() {
               <motion.img 
                 loading="lazy"
                 src="/assets/pink-brush-stroke.png"
-                initial={{ opacity: 0, scaleX: 0, originX: 0.5 }}
-                animate={{ opacity: 0.4, scaleX: 1 }}
+                initial={{ opacity: 0, scaleX: 0, originX: 0.5, x: "-50%", y: "-50%" }}
+                animate={{ opacity: 0.4, scaleX: 1, x: "-50%", y: "-50%" }}
                 transition={{ delay: 3.8, duration: 1.2, ease: "easeOut" }}
-                style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '280px', height: '110px', objectFit: 'contain', zIndex: -1 }}
+                style={{ position: 'absolute', top: '50%', left: '50%', width: '280px', height: '110px', objectFit: 'contain', zIndex: -1 }}
               />
               
               {/* Sparkles */}
