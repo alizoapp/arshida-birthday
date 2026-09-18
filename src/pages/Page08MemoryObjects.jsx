@@ -5,10 +5,10 @@ export default function Page08MemoryObjects() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = [
-    "/assets/images/funny moment - her similing.png",
-    "/assets/images/our internship- but this use the funny moment.png",
-    "/assets/images/our after college first meet.png",
-    "/assets/images/college days photo.png"
+    "/assets/images/funny-moment-her-similing.png",
+    "/assets/images/our-internship-but-this-use-the-funny-moment.png",
+    "/assets/images/our-after-college-first-meet.png",
+    "/assets/images/college-days-photo.png"
   ];
 
   useEffect(() => {
@@ -61,8 +61,8 @@ export default function Page08MemoryObjects() {
             style={{ position: 'absolute', width: '85%', zIndex: 10 }}
           >
             {/* Daisy Flower Decoration (Top Left) */}
-            <img 
-              src="/assets/13 — Flower : Daisy Decoration.png"
+            <img loading="lazy" 
+              src="/assets/13-flower-daisy-decoration.png"
               style={{ position: 'absolute', top: '-25px', left: '-25px', width: '80px', zIndex: 20, transform: 'rotate(-15deg)' }}
               alt="Daisy Decoration"
             />
@@ -75,7 +75,7 @@ export default function Page08MemoryObjects() {
               boxShadow: 'var(--shadow-paper-lg)',
               border: '1px solid rgba(0,0,0,0.05)'
             }}>
-              <img 
+              <img loading="lazy" 
                 src={images[currentIndex]} 
                 alt="Memory" 
                 style={{ 

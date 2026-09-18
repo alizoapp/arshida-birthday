@@ -33,15 +33,15 @@ export default function Page12PhotoWall() {
       <div style={{ position: 'relative', width: '100%', maxWidth: '340px', display: 'flex', justifyContent: 'center' }}>
         
         {/* Decorative background assets */}
-        <motion.img src="/assets/14 — Confetti & Stars.png" 
+        <motion.img loading="lazy" src="/assets/14-confetti-stars.png" 
           initial={{ opacity: 0 }} whileInView={{ opacity: 0.8 }} viewport={{ once: true }} transition={{ delay: 0.6 }}
           style={{ position: 'absolute', top: '-20px', width: '120%', zIndex: 0 }} />
           
-        <motion.img src="/assets/13 — Flower : Daisy Decoration.png" 
+        <motion.img loading="lazy" src="/assets/13-flower-daisy-decoration.png" 
           initial={{ opacity: 0, rotate: -20 }} whileInView={{ opacity: 1, rotate: 10 }} viewport={{ once: true }} transition={{ delay: 0.7 }}
           style={{ position: 'absolute', bottom: '10px', left: '-10px', width: '60px', zIndex: 5, y: yParallax }} />
           
-        <motion.img src="/assets/11 — Paper Airplane.png" 
+        <motion.img loading="lazy" src="/assets/11-paper-airplane.png" 
           initial={{ opacity: 0, rotate: -40 }} whileInView={{ opacity: 1, rotate: -20 }} viewport={{ once: true }} transition={{ delay: 0.8 }}
           style={{ position: 'absolute', top: '10px', right: '-10px', width: '70px', zIndex: 5 }} />
 
@@ -53,8 +53,8 @@ export default function Page12PhotoWall() {
           transition={{ delay: 0.4, duration: 1, ease: 'easeOut' }}
           style={{ zIndex: 10, width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}
         >
-          <img 
-            src="/assets/images/i wish her like dimont- in collage days .png" 
+          <img loading="lazy" 
+            src="/assets/images/i-wish-her-like-dimont-in-collage-days.png" 
             alt="Arshida Memory" 
             style={{ 
               width: '80%', 

@@ -130,8 +130,8 @@ export default function Page01Opening() {
           style={{ width: '100%', height: '100%', position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', pointerEvents: 'none' }}
         >
           {/* Ambient Decorative Chaos */}
-          <motion.img src="/assets/funny memory/Smiling Yellow Star.png" initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1, y: [-3, 3, -3], rotate: [10, -10, 10] }} transition={{ opacity: { delay: 2.5 }, scale: { type: 'spring', delay: 2.5 }, y: { repeat: Infinity, duration: 4 }, rotate: { repeat: Infinity, duration: 5 } }} style={{ position: 'absolute', top: '230px', right: '40px', width: '28px', filter: 'sepia(1) saturate(3) hue-rotate(-20deg)', zIndex: 10 }} />
-          <motion.img src="/assets/13 — Flower : Daisy Decoration.png" initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1, y: [2, -2, 2], rotate: [0, 15, 0] }} transition={{ opacity: { delay: 2.8 }, scale: { type: 'spring', delay: 2.8 }, y: { repeat: Infinity, duration: 5 }, rotate: { repeat: Infinity, duration: 7 } }} style={{ position: 'absolute', top: '300px', left: '30px', width: '32px', zIndex: 10 }} />
+          <motion.img src="/assets/funny memory/smiling-yellow-star.png" initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1, y: [-3, 3, -3], rotate: [10, -10, 10] }} transition={{ opacity: { delay: 2.5 }, scale: { type: 'spring', delay: 2.5 }, y: { repeat: Infinity, duration: 4 }, rotate: { repeat: Infinity, duration: 5 } }} style={{ position: 'absolute', top: '230px', right: '40px', width: '28px', filter: 'sepia(1) saturate(3) hue-rotate(-20deg)', zIndex: 10 }} />
+          <motion.img src="/assets/13-flower-daisy-decoration.png" initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1, y: [2, -2, 2], rotate: [0, 15, 0] }} transition={{ opacity: { delay: 2.8 }, scale: { type: 'spring', delay: 2.8 }, y: { repeat: Infinity, duration: 5 }, rotate: { repeat: Infinity, duration: 7 } }} style={{ position: 'absolute', top: '300px', left: '30px', width: '32px', zIndex: 10 }} />
 
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 3.5, duration: 1 }} className="handwritten" style={{ fontSize: '1.2rem', color: 'var(--color-berry)', marginTop: '80px', zIndex: 10, opacity: 0.85 }}>
         
@@ -176,7 +176,7 @@ export default function Page01Opening() {
                    <defs>
                       <mask id="arshida-mask"><motion.path d="M -10 55 L 290 55" stroke="white" strokeWidth="110" fill="none" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ delay: 1.8, duration: 1.2, ease: "easeInOut" }} /></mask>
                    </defs>
-                   <image href="/assets/02 — Arshida Name.png" width="280" height="110" preserveAspectRatio="xMidYMid contain" mask="url(#arshida-mask)" />
+                   <image href="/assets/02-arshida-name.png" width="280" height="110" preserveAspectRatio="xMidYMid contain" mask="url(#arshida-mask)" />
                 </svg>
              </div>
 
@@ -195,7 +195,7 @@ export default function Page01Opening() {
                  initial={{ opacity: 0, y: 50, scale: 0.96 }} animate={{ opacity: 1, y: 0, scale: 1 }} transition={{ delay: 2.8, duration: 1.2, ease: "easeOut" }}
                  style={{ width: '100%', height: '100%' }}
                >
-                  <img src="/assets/Arshida Birthday Hero Cutout.png" alt="Arshida" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                  <img src="/assets/arshida-birthday-hero-cutout.png" alt="Arshida" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                   <div style={{ position: 'absolute', bottom: '-4px', left: '50%', transform: 'translateX(-50%)', width: '170px', height: '12px', background: 'radial-gradient(ellipse at center, rgba(73, 59, 56, 0.18) 0%, transparent 70%)', zIndex: -1 }} />
                </motion.div>
              </div>

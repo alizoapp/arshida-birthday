@@ -46,13 +46,13 @@ export default function Page04CollegeChaos() {
         >
           <div className="photo-card" style={{ paddingBottom: '16px' }}>
             <div className="photo-tape" style={{ transform: 'translateX(-50%) rotate(-4deg)' }} />
-            <img src="/assets/images/funny moment - her similing.png" alt="Funny Moment" />
+            <img loading="lazy" src="/assets/images/funny-moment-her-similing.png" alt="Funny Moment" />
           </div>
         </motion.div>
 
         {/* Animated Corner 1: College Notebook */}
-        <motion.img
-          src="/assets/funny memory/College Notebook.png"
+        <motion.img loading="lazy"
+          src="/assets/funny memory/college-notebook.png"
           initial={{ opacity: 0, x: -30, rotate: -20 }}
           whileInView={{ opacity: 1, x: 0, rotate: -8 }}
           animate={{ y: [0, -8, 0], rotate: [-8, -10, -8] }}
@@ -62,8 +62,8 @@ export default function Page04CollegeChaos() {
         />
 
         {/* Animated Corner 2: College Backpack */}
-        <motion.img
-          src="/assets/funny memory/College Backpack.png"
+        <motion.img loading="lazy"
+          src="/assets/funny memory/college-backpack.png"
           initial={{ opacity: 0, x: 30, rotate: 20 }}
           whileInView={{ opacity: 1, x: 0, rotate: 12 }}
           animate={{ y: [0, 8, 0], rotate: [12, 14, 12] }}
@@ -73,8 +73,8 @@ export default function Page04CollegeChaos() {
         />
 
         {/* Animated Corner 3: College Days Note (Replaced Clock) */}
-        <motion.img
-          src="/assets/funny memory/College Days Note.png"
+        <motion.img loading="lazy"
+          src="/assets/funny memory/college-days-note.png"
           initial={{ opacity: 0, scale: 0.5, rotate: -10 }}
           whileInView={{ opacity: 1, scale: 1, rotate: -5 }}
           animate={{ y: [0, 5, 0], rotate: [-5, -8, -5] }}
@@ -84,8 +84,8 @@ export default function Page04CollegeChaos() {
         />
 
         {/* Animated Corner 4: Iced Coffee */}
-        <motion.img
-          src="/assets/funny memory/Iced Coffee.png"
+        <motion.img loading="lazy"
+          src="/assets/funny memory/iced-coffee.png"
           initial={{ opacity: 0, y: 30, rotate: 30 }}
           whileInView={{ opacity: 1, y: 0, rotate: 15 }}
           animate={{ y: [0, -10, 0] }}

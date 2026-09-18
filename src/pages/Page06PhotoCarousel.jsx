@@ -22,8 +22,8 @@ export default function Page06PhotoCarousel() {
       </motion.h2>
 
       {/* Asset 2: College Books Stack (Middle Left of SCREEN) */}
-      <motion.img
-        src="/assets/funny memory/College Books Stack.png"
+      <motion.img loading="lazy"
+        src="/assets/funny memory/college-books-stack.png"
         initial={{ opacity: 0, x: -50, rotate: -10 }}
         whileInView={{ opacity: 1, x: 0, rotate: -5 }}
         animate={{ y: [0, 5, 0] }}
@@ -33,8 +33,8 @@ export default function Page06PhotoCarousel() {
       />
 
       {/* Asset 3: Coffee Cup (Top Right of SCREEN) */}
-      <motion.img
-        src="/assets/09 — Coffee Cup.png"
+      <motion.img loading="lazy"
+        src="/assets/09-coffee-cup.png"
         initial={{ opacity: 0, x: 50, rotate: 10 }}
         whileInView={{ opacity: 1, x: 0, rotate: 5 }}
         animate={{ y: [0, -5, 0] }}
@@ -55,11 +55,11 @@ export default function Page06PhotoCarousel() {
         >
           <div className="photo-card" style={{ paddingBottom: '16px' }}>
             <div className="photo-tape" style={{ transform: 'translateX(-50%) rotate(3deg)', background: 'rgba(255, 255, 255, 0.9)' }} />
-            <img src="/assets/images/college days in 3rd year.png" alt="Same Class Different Stories" />
+            <img loading="lazy" src="/assets/images/college-days-in-3rd-year.png" alt="Same Class Different Stories" />
             
             {/* Adding a small daisy decoration to blend it with the scrapbook theme */}
-            <motion.img 
-              src="/assets/13 — Flower : Daisy Decoration.png"
+            <motion.img loading="lazy" 
+              src="/assets/13-flower-daisy-decoration.png"
               initial={{ opacity: 0, scale: 0 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -70,8 +70,8 @@ export default function Page06PhotoCarousel() {
         </motion.div>
 
         {/* Asset 1: Sticky Notes (Moved Left) */}
-        <motion.img
-          src="/assets/funny memory/Sticky Notes Stack.png"
+        <motion.img loading="lazy"
+          src="/assets/funny memory/sticky-notes-stack.png"
           initial={{ opacity: 0, rotate: 20 }}
           whileInView={{ opacity: 1, rotate: 5 }}
           animate={{ y: [0, -5, 0], rotate: [5, 8, 5] }}

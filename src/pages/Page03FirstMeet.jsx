@@ -31,7 +31,7 @@ export default function Page03FirstMeet() {
       >
         <div className="photo-card" style={{ paddingBottom: '80px' }}>
           <div className="photo-tape" />
-          <img src="/assets/images/our first selfy.png" alt="First Meet" />
+          <img loading="lazy" src="/assets/images/our-first-selfy.png" alt="First Meet" />
           
           <div className="handwritten" style={{
             position: 'absolute',

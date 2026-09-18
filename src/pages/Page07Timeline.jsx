@@ -114,9 +114,9 @@ export default function Page07Timeline() {
            >
               {/* Traveling Arrow */}
               {activeIndex === 0 && (
-                 <motion.img 
+                 <motion.img loading="lazy" 
                    layoutId="traveling-arrow" 
-                   src="/assets/funny memory/This Way To Fun Arrow.png" 
+                   src="/assets/funny memory/this-way-to-fun-arrow.png" 
                    style={{ position: 'absolute', top: '-15px', left: '-35px', width: '22px', transform: 'rotate(15deg) scaleX(-1)' }} 
                    alt="arrow"
                  />
@@ -136,7 +136,7 @@ export default function Page07Timeline() {
                 style={{ position: 'relative', background: 'white', padding: '6px 6px 20px 6px', boxShadow: activeIndex === 0 ? '0 15px 35px rgba(70,45,35,.15)' : '0 4px 12px rgba(70,45,35,.08)', width: '130px', border: '1px solid #EAE1D8' }}
               >
                  <div style={{ position: 'absolute', top: '-6px', right: '15px', width: '30px', height: '12px', background: 'rgba(255, 255, 255, 0.85)', backdropFilter: 'blur(2px)', transform: 'rotate(-4deg)', boxShadow: '0 1px 2px rgba(0,0,0,0.1)', zIndex: 10 }} />
-                 <img src="/assets/images/our first selfy.png" style={{ width: '100%', height: '120px', objectFit: 'cover', borderRadius: '1px' }} alt="First Selfie" />
+                 <img loading="lazy" src="/assets/images/our-first-selfy.png" style={{ width: '100%', height: '120px', objectFit: 'cover', borderRadius: '1px' }} alt="First Selfie" />
               </motion.div>
            </div>
         </div>
@@ -151,9 +151,9 @@ export default function Page07Timeline() {
              style={{ position: 'absolute', left: '50%', top: '30px', transform: 'translate(-50%, -50%)', width: '10px', height: '10px', borderRadius: '50%', background: 'var(--color-ivory)', border: '2px solid var(--color-berry)', zIndex: 10, boxShadow: activeIndex === 1 ? '0 0 0 6px rgba(159,49,90,0.15)' : '0 0 0 4px rgba(255,249,242,0.8)', transition: 'box-shadow 0.3s' }} 
            >
               {activeIndex === 1 && (
-                 <motion.img 
+                 <motion.img loading="lazy" 
                    layoutId="traveling-arrow" 
-                   src="/assets/funny memory/This Way To Fun Arrow.png" 
+                   src="/assets/funny memory/this-way-to-fun-arrow.png" 
                    style={{ position: 'absolute', top: '-15px', left: '15px', width: '22px', transform: 'rotate(70deg)' }} 
                    alt="arrow"
                  />
@@ -167,7 +167,7 @@ export default function Page07Timeline() {
                 style={{ position: 'relative', background: '#FFF9F2', padding: '8px 8px 24px 8px', boxShadow: activeIndex === 1 ? '0 15px 35px rgba(70,45,35,.15)' : '0 5px 18px rgba(70,45,35,.08)', width: '140px', float: 'right' }}
               >
                  <div style={{ position: 'absolute', top: '-8px', left: '15px', width: '35px', height: '14px', background: 'rgba(233,107,145,0.4)', transform: 'rotate(4deg)', zIndex: 10, backdropFilter: 'blur(1px)' }} />
-                 <img src="/assets/images/first year second image in college function.png" style={{ width: '100%', height: '130px', objectFit: 'contain', filter: 'drop-shadow(0 8px 20px rgba(60,35,30,.12))', transform: 'scale(1.15) translateY(-5px) translateX(4px)', position: 'relative', zIndex: 5 }} alt="First Year" />
+                 <img loading="lazy" src="/assets/images/first-year-second-image-in-college-function.png" style={{ width: '100%', height: '130px', objectFit: 'contain', filter: 'drop-shadow(0 8px 20px rgba(60,35,30,.12))', transform: 'scale(1.15) translateY(-5px) translateX(4px)', position: 'relative', zIndex: 5 }} alt="First Year" />
               </motion.div>
            </div>
 
@@ -188,9 +188,9 @@ export default function Page07Timeline() {
              style={{ position: 'absolute', left: '50%', top: '20px', transform: 'translate(-50%, -50%)', width: '10px', height: '10px', borderRadius: '50%', background: 'var(--color-ivory)', border: '2px solid var(--color-berry)', zIndex: 10, boxShadow: activeIndex === 2 ? '0 0 0 6px rgba(159,49,90,0.15)' : '0 0 0 4px rgba(255,249,242,0.8)', transition: 'box-shadow 0.3s' }} 
            >
               {activeIndex === 2 && (
-                 <motion.img 
+                 <motion.img loading="lazy" 
                    layoutId="traveling-arrow" 
-                   src="/assets/funny memory/This Way To Fun Arrow.png" 
+                   src="/assets/funny memory/this-way-to-fun-arrow.png" 
                    style={{ position: 'absolute', top: '-15px', left: '-35px', width: '22px', transform: 'rotate(15deg) scaleX(-1)' }} 
                    alt="arrow"
                  />
@@ -210,7 +210,7 @@ export default function Page07Timeline() {
                 style={{ position: 'relative', background: 'white', padding: '6px 6px 20px 6px', boxShadow: activeIndex === 2 ? '0 15px 35px rgba(70,45,35,.15)' : '0 4px 12px rgba(70,45,35,.08)', width: '130px', border: '1px solid #EAE1D8' }}
               >
                  <div style={{ position: 'absolute', top: '-6px', right: '40px', width: '30px', height: '12px', background: 'rgba(255, 255, 255, 0.85)', backdropFilter: 'blur(2px)', transform: 'rotate(2deg)', boxShadow: '0 1px 2px rgba(0,0,0,0.1)', zIndex: 10 }} />
-                 <img src="/assets/images/our internship- but this use the funny moment.png" style={{ width: '100%', height: '120px', objectFit: 'cover', borderRadius: '1px' }} alt="Internship" />
+                 <img loading="lazy" src="/assets/images/our-internship-but-this-use-the-funny-moment.png" style={{ width: '100%', height: '120px', objectFit: 'cover', borderRadius: '1px' }} alt="Internship" />
               </motion.div>
            </div>
         </div>
@@ -225,9 +225,9 @@ export default function Page07Timeline() {
              style={{ position: 'absolute', left: '50%', top: '20px', transform: 'translate(-50%, -50%)', width: '10px', height: '10px', borderRadius: '50%', background: 'var(--color-ivory)', border: '2px solid var(--color-berry)', zIndex: 10, boxShadow: activeIndex === 3 ? '0 0 0 6px rgba(159,49,90,0.15)' : '0 0 0 4px rgba(255,249,242,0.8)', transition: 'box-shadow 0.3s' }} 
            >
               {activeIndex === 3 && (
-                 <motion.img 
+                 <motion.img loading="lazy" 
                    layoutId="traveling-arrow" 
-                   src="/assets/funny memory/This Way To Fun Arrow.png" 
+                   src="/assets/funny memory/this-way-to-fun-arrow.png" 
                    style={{ position: 'absolute', top: '-15px', left: '15px', width: '22px', transform: 'rotate(70deg)' }} 
                    alt="arrow"
                  />
@@ -241,8 +241,8 @@ export default function Page07Timeline() {
                 style={{ position: 'relative', background: 'white', padding: '6px 6px 20px 6px', boxShadow: activeIndex === 3 ? '0 15px 35px rgba(70,45,35,.15)' : '0 4px 12px rgba(70,45,35,.08)', width: '130px', border: '1px solid #EAE1D8', float: 'right' }}
               >
                  <div style={{ position: 'absolute', top: '-6px', left: '15px', width: '30px', height: '12px', background: 'rgba(255, 255, 255, 0.85)', backdropFilter: 'blur(2px)', transform: 'rotate(-8deg)', boxShadow: '0 1px 2px rgba(0,0,0,0.1)', zIndex: 10 }} />
-                 <img src="/assets/images/college days in 3rd year.png" style={{ width: '100%', height: '120px', objectFit: 'cover', borderRadius: '1px' }} alt="Project Work" />
-                 <img src="/assets/13 — Flower : Daisy Decoration.png" style={{ position: 'absolute', bottom: '-15px', right: '-15px', width: '28px', transform: 'rotate(45deg)', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.1))' }} alt="daisy" />
+                 <img loading="lazy" src="/assets/images/college-days-in-3rd-year.png" style={{ width: '100%', height: '120px', objectFit: 'cover', borderRadius: '1px' }} alt="Project Work" />
+                 <img loading="lazy" src="/assets/13-flower-daisy-decoration.png" style={{ position: 'absolute', bottom: '-15px', right: '-15px', width: '28px', transform: 'rotate(45deg)', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.1))' }} alt="daisy" />
               </motion.div>
            </div>
            
@@ -263,9 +263,9 @@ export default function Page07Timeline() {
              style={{ position: 'absolute', left: '50%', top: '20px', transform: 'translate(-50%, -50%)', width: '10px', height: '10px', borderRadius: '50%', background: 'var(--color-ivory)', border: '2px solid var(--color-berry)', zIndex: 10, boxShadow: activeIndex === 4 ? '0 0 0 6px rgba(159,49,90,0.15)' : '0 0 0 4px rgba(255,249,242,0.8)', transition: 'box-shadow 0.3s' }} 
            >
               {activeIndex === 4 && (
-                 <motion.img 
+                 <motion.img loading="lazy" 
                    layoutId="traveling-arrow" 
-                   src="/assets/funny memory/This Way To Fun Arrow.png" 
+                   src="/assets/funny memory/this-way-to-fun-arrow.png" 
                    style={{ position: 'absolute', top: '-15px', left: '-35px', width: '22px', transform: 'rotate(15deg) scaleX(-1)' }} 
                    alt="arrow"
                  />
@@ -290,8 +290,8 @@ export default function Page07Timeline() {
                 style={{ position: 'relative', background: 'white', padding: '6px 6px 20px 6px', boxShadow: activeIndex === 4 ? '0 15px 35px rgba(70,45,35,.15)' : '0 4px 12px rgba(70,45,35,.08)', width: '130px', border: '1px solid #EAE1D8' }}
               >
                  <div style={{ position: 'absolute', top: '-6px', right: '15px', width: '30px', height: '12px', background: 'rgba(255, 255, 255, 0.85)', backdropFilter: 'blur(2px)', transform: 'rotate(4deg)', boxShadow: '0 1px 2px rgba(0,0,0,0.1)', zIndex: 10 }} />
-                 <img src="/assets/images/our last meet in kozhikode.jpg" style={{ width: '100%', height: '120px', objectFit: 'cover', borderRadius: '1px' }} alt="Last Meet" />
-                 <img src="/assets/funny memory/Smiling Yellow Star.png" style={{ position: 'absolute', top: '-10px', right: '-10px', width: '20px', filter: 'sepia(1) saturate(3) hue-rotate(-30deg)' }} alt="sparkle" />
+                 <img loading="lazy" src="/assets/images/our-last-meet-in-kozhikode.jpg" style={{ width: '100%', height: '120px', objectFit: 'cover', borderRadius: '1px' }} alt="Last Meet" />
+                 <img loading="lazy" src="/assets/funny memory/smiling-yellow-star.png" style={{ position: 'absolute', top: '-10px', right: '-10px', width: '20px', filter: 'sepia(1) saturate(3) hue-rotate(-30deg)' }} alt="sparkle" />
               </motion.div>
            </div>
         </div>

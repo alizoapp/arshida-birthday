@@ -17,8 +17,8 @@ export default function Page11ReasonsToSmile() {
       <div style={{ position: 'relative', width: '100%', maxWidth: '320px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         
         {/* Typography */}
-        <motion.img 
-          src="/assets/01 — Happy Birthday 22.png" 
+        <motion.img loading="lazy" 
+          src="/assets/01-happy-birthday-22.png" 
           alt="Happy Birthday"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -28,8 +28,8 @@ export default function Page11ReasonsToSmile() {
         />
 
         {/* Cake - visually separated from typography */}
-        <motion.img 
-          src="/assets/03 — Birthday Cake.png" 
+        <motion.img loading="lazy" 
+          src="/assets/03-birthday-cake.png" 
           alt="Cake"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -32,11 +32,11 @@ export default function Page02BeforeMemories() {
         <div className="photo-card" style={{ paddingBottom: '24px' }}>
           <div className="photo-tape" style={{ background: 'rgba(246, 182, 200, 0.8)' /* Pink tape */ }} />
           
-          <img src="/assets/images/i wish her like dimont- in collage days .png" alt="College Days" />
+          <img loading="lazy" src="/assets/images/i-wish-her-like-dimont-in-collage-days.png" alt="College Days" />
           
           {/* Subtle decorations on polaroid */}
-          <img 
-            src="/assets/13 — Flower : Daisy Decoration.png" 
+          <img loading="lazy" 
+            src="/assets/13-flower-daisy-decoration.png" 
             alt="Daisy"
             style={{ position: 'absolute', bottom: '10px', right: '-15px', width: '40px', zIndex: 5, transform: 'rotate(15deg)' }}
           />

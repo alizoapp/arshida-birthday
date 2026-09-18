@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 
 export default function Page09ThingsIRemember() {
   const events = [
-    { title: 'First Year', desc: 'The starting point.', img: '/assets/16 — College Notebook.png' },
-    { title: 'First Conversations', desc: 'Slightly awkward, totally ordinary.', img: '/assets/09 — Coffee Cup.png' },
-    { title: 'Random College Chaos', desc: 'Assignments, canteen, and laughs.', img: '/assets/funny memory/College To Do Checklist.png' },
-    { title: 'More Memories', desc: 'Trips, jokes, and surviving.', img: '/assets/07 — Polaroid Camera + Photos.png' },
-    { title: 'Still Friends', desc: 'Some things don\'t change.', img: '/assets/funny memory/Smiling Yellow Star.png' }
+    { title: 'First Year', desc: 'The starting point.', img: '/assets/16-college-notebook.png' },
+    { title: 'First Conversations', desc: 'Slightly awkward, totally ordinary.', img: '/assets/09-coffee-cup.png' },
+    { title: 'Random College Chaos', desc: 'Assignments, canteen, and laughs.', img: '/assets/funny memory/college-to-do-checklist.png' },
+    { title: 'More Memories', desc: 'Trips, jokes, and surviving.', img: '/assets/07-polaroid-camera-photos.png' },
+    { title: 'Still Friends', desc: 'Some things don\'t change.', img: '/assets/funny memory/smiling-yellow-star.png' }
   ];
 
   return (
@@ -51,7 +51,7 @@ export default function Page09ThingsIRemember() {
             </div>
 
             {/* Tiny Decorative Image */}
-            <motion.img 
+            <motion.img loading="lazy" 
               src={evt.img} 
               alt={evt.title}
               whileHover={{ scale: 1.1, rotate: 5 }}
