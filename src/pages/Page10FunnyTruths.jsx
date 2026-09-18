@@ -7,28 +7,28 @@ export default function Page10FunnyTruths() {
   const [isActive, setIsActive] = useState(false);
 
   const slides = [
-    { img: "/assets/images/our-first-selfy.png", text: "1. The day it all started... our first selfie!" },
-    { img: "/assets/images/first-year-second-image-in-college-function.png", text: "2. First year functions, so many memories." },
-    { img: "/assets/images/college-days-photo.png", text: "3. Those unforgettable college days." },
-    { img: "/assets/images/college-days-in-3rd-year.png", text: "4. 3rd year, when we ruled the campus." },
-    { img: "/assets/images/funny-moment-her-similing.png", text: "5. Never skip the funny moments." },
-    { img: "/assets/images/our-internship-but-this-use-the-funny-moment.png", text: "6. Internship diaries and inside jokes." },
-    { img: "/assets/images/this-her-similing-special-moments.png", text: "7. Smiling through all the special moments." },
-    { img: "/assets/images/her-single-photos-in-beautiful-1.png", text: "8. Coffee fixes questionable decisions." },
-    { img: "/assets/images/her-single-photos-in-beautiful-2.png", text: "9. Some classes become memories." },
-    { img: "/assets/images/her-single-photos-in-beautiful-3.png", text: "10. Random conversations become stories." },
-    { img: "/assets/images/her-single-photos-in-beautiful-4.png", text: "11. Good friends make ordinary days better." },
-    { img: "/assets/images/her-single-photos-in-beautiful-5.png", text: "12. Because your smile is contagious." },
-    { img: "/assets/images/her-single-photos-in-beautiful-6.png", text: "13. For all the late-night talks." },
-    { img: "/assets/images/her-single-photos-in-beautiful-7.png", text: "14. Always radiating positive energy." },
-    { img: "/assets/images/her-single-photos-in-beautiful.png", text: "15. A picture-perfect moment." },
-    { img: "/assets/images/i-wish-her-like-dimont-in-collage-days.png", text: "16. Shining bright like a diamond." },
-    { img: "/assets/images/our-after-college-first-meet.png", text: "17. Our first meet after college!" },
-    { img: "/assets/images/the-same-day-of-our-after-the-college-second-meet-in-nother-friend-marrage.png", text: "18. Reuniting at a friend's marriage." },
-    { img: "/assets/images/our-last-meet-in-kozhikode.jpg", text: "19. Our last meet in Kozhikode." },
-    { img: "/assets/images/our-first-selfy.png", text: "20. Looking back at where we started..." },
-    { img: "/assets/images/first-year-second-image-in-college-function.png", text: "21. To all the chaos we survived together." },
-    { img: "/assets/images/college-days-photo.png", text: "22. Here's to 22, and 22 more things to come!", isEnd: true }
+    { img: "/assets/images/our-first-selfy.png", text: "1. The prologue to our chaos: where the magic first began." },
+    { img: "/assets/images/first-year-second-image-in-college-function.png", text: "2. First-year dreams and a million unfiltered laughs." },
+    { img: "/assets/images/college-days-photo.png", text: "3. Golden hours and memories that outlast the semester." },
+    { img: "/assets/images/college-days-in-3rd-year.png", text: "4. Ruling the campus, one ridiculous inside joke at a time." },
+    { img: "/assets/images/funny-moment-her-similing.png", text: "5. A smile so bright it could cancel morning classes." },
+    { img: "/assets/images/our-internship-but-this-use-the-funny-moment.png", text: "6. Turning internship stress into pure, unadulterated comedy." },
+    { img: "/assets/images/this-her-similing-special-moments.png", text: "7. Capturing the kind of joy you can't put into words." },
+    { img: "/assets/images/her-single-photos-in-beautiful-1.png", text: "8. Effortless grace, even when the syllabus was screaming." },
+    { img: "/assets/images/her-single-photos-in-beautiful-2.png", text: "9. Finding little pockets of peace in the college rush." },
+    { img: "/assets/images/her-single-photos-in-beautiful-3.png", text: "10. Turning mundane moments into stories we'll tell forever." },
+    { img: "/assets/images/her-single-photos-in-beautiful-4.png", text: "11. Your energy is the kind that makes everything better." },
+    { img: "/assets/images/her-single-photos-in-beautiful-5.png", text: "12. A rare soul who always sees the good in the world." },
+    { img: "/assets/images/her-single-photos-in-beautiful-6.png", text: "13. Embracing the journey with elegance and a bit of madness." },
+    { img: "/assets/images/her-single-photos-in-beautiful-7.png", text: "14. Bold, brilliant, and constantly inspiring everyone around you." },
+    { img: "/assets/images/her-single-photos-in-beautiful.png", text: "15. Leaving a trail of warmth and laughter wherever you go." },
+    { img: "/assets/images/i-wish-her-like-dimont-in-collage-days.png", text: "16. Keep shining—the world needs exactly your kind of light." },
+    { img: "/assets/images/our-after-college-first-meet.png", text: "17. The campus chapter closed, but our story just leveled up." },
+    { img: "/assets/images/the-same-day-of-our-after-the-college-second-meet-in-nother-friend-marrage.png", text: "18. Time passes, locations change, but our bond stays legendary." },
+    { img: "/assets/images/our-last-meet-in-kozhikode.jpg", text: "19. Kozhikode reunions: proving that true friends never drift." },
+    { img: "/assets/images/our-first-selfy.png", text: "20. From clueless freshers to conquering the real world." },
+    { img: "/assets/images/first-year-second-image-in-college-function.png", text: "21. Cheers to the beautiful chaos we survived together." },
+    { img: "/assets/images/college-days-photo.png", text: "22. Happy 22nd! The most spectacular chapters are still unwritten.", isEnd: true }
   ];
 
   useEffect(() => {
@@ -131,7 +131,8 @@ export default function Page10FunnyTruths() {
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
-              width: '100%'
+              width: '100%',
+              position: 'relative'
             }}>
               <img loading="lazy" 
                 src={slides[currentIndex].img} 
@@ -143,6 +144,12 @@ export default function Page10FunnyTruths() {
                   objectFit: 'contain', 
                   borderRadius: '4px'
                 }} 
+              />
+              {/* Bottom Floral Decoration on the frame */}
+              <img loading="lazy" 
+                src="/assets/bottom-floral-decoration.png" 
+                style={{ position: 'absolute', bottom: '-20px', left: '-20px', width: '90px', zIndex: 10, filter: 'drop-shadow(2px 6px 10px rgba(0,0,0,0.15))', pointerEvents: 'none' }}
+                alt="Floral Decoration"
               />
             </div>
             
@@ -161,28 +168,10 @@ export default function Page10FunnyTruths() {
         </AnimatePresence>
       </div>
 
-      {/* Premium Scrapbook Decorative Elements */}
-      <motion.img loading="lazy" 
-        src="/assets/funny memory/memories-cloud.png"
-        className="scrapbook-sticker"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 0.7, y: 0 }}
-        animate={{ y: [0, -15, 0] }}
-        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-        viewport={{ once: true }}
-        style={{ top: '10%', right: '2%', width: '120px', zIndex: 0 }}
-      />
+    
       
-      <motion.img loading="lazy" 
-        src="/assets/funny memory/laughing-face-emoji.png"
-        className="scrapbook-sticker"
-        initial={{ opacity: 0, scale: 0 }}
-        whileInView={{ opacity: 0.5, scale: 1 }}
-        animate={{ rotate: [0, 15, -15, 0] }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-        viewport={{ once: true }}
-        style={{ bottom: '5%', left: '5%', width: '70px', zIndex: 0 }}
-      />
+  
+  
 
       <motion.img loading="lazy" 
         src="/assets/funny memory/smiling-yellow-star.png"
